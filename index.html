@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"></div>
+            <ul class="main-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book Tickets</a></li>
+                <li class="has-submenu">
+                    <a href="#">Confirm Ticket</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Bus Ticket</a></li>
+                        <li><a href="#">Train Ticket</a></li>
+                        <li><a href="#">Cab Ticket</a></li>
+                        <li><a href="#">Flight Ticket</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">My Bookings</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <div class="user-account">
+                <img src="user-icon.png" alt="User Icon">
+                <ul class="user-menu">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Banner/Booking Section -->
+    <section class="booking-banner">
+        <div class="booking-form">
+            <select>
+                <option>Bus</option>
+                <option>Train</option>
+                <option>Cab</option>
+                <option>Flight</option>
+            </select>
+            <input type="text" placeholder="Departure">
+            <input type="text" placeholder="Arrival">
+            <input type="date">
+            <input type="time">
+            <button>Search</button>
+        </div>
+        <div class="promotions">
+            <p>Special Offers: 50% off on your first booking!</p>
+        </div>
+    </section>
+
+    <!-- Login/Signup Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="auth-forms">
+                <div id="loginForm">
+                    <h2>Login</h2>
+                    <input type="text" id="loginUsername" placeholder="Username">
+                    <input type="password" id="loginPassword" placeholder="Password">
+                    <button id="loginBtn">Login</button>
+                    <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+                </div>
+                <div id="signupForm">
+                    <h2>Sign Up</h2>
+                    <input type="text" id="signupUsername" placeholder="Username">
+                    <input type="email" id="signupEmail" placeholder="Email">
+                    <input type="password" id="signupPassword" placeholder="Password">
+                    <button id="signupBtn">Sign Up</button>
+                    <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-media">
+                <!-- Social media icons here -->
+            </div>
+            <div class="contact-info">
+                <p>Address: Your Address</p>
+                <p>Email: support@yourdomain.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

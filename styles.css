@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu li {
+    position: relative;
+}
+
+.main-menu li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.main-menu li a:hover {
+    background-color: #555;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.sub-menu li a {
+    padding: 10px;
+}
+
+.has-submenu:hover .sub-menu {
+    display: block;
+}
+
+.user-account {
+    display: flex;
+    align-items: center;
+}
+
+.user-account img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.user-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background-color: #444;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 160px;
+}
+
+.user-menu li a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.user-account:hover .user-menu {
+    display: block;
+}
+
+/* Booking Banner */
+.booking-banner {
+    background-color: #eee;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.booking-form {
+    display: inline-block;
+    text-align: left;
+}
+
+.booking-form input, .booking-form select, .booking-form button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.auth-forms {
+    text-align: center;
+}
+
+.auth-forms input {
+    width: calc(100% - 24px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-forms button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-forms p {
+    margin-top: 10px;
+}
+
+.auth-forms a {
+    color: #333;
+    text-decoration: none;
+}
+
+.auth-forms a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quick-links, .social-media, .contact-info {
+    flex: 1;
+    margin: 10px;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
